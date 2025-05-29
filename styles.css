@@ -1,0 +1,166 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-image: linear-gradient(90deg, #e6fcd1, #f4f8c5);
+  color: #070707;
+  display: flex;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  background: linear-gradient(to right, white 50%, #f0c413 50%, #f2c523 100%);
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  padding: 40px 30px;
+  box-shadow: 1px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.logo {
+  
+    font-family: "Arvo", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+nav ul {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: relative;
+  min-height: 500px;
+  align-items: center;
+}
+
+.text-content {
+  max-width: 500px;
+  z-index: 10;
+  text-align: left;
+  flex: 1;
+}
+
+.text-content h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #060404;
+}
+
+.text-content p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #d7b003;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.image-wrapper {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 400px;
+}
+
+.book {
+  width: 100%;
+  max-width: 650px;
+  height: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 900px) {
+  .container {
+    background: linear-gradient(to bottom, #fff 50%, #d4ac1d 50%);
+    padding: 30px 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hero {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-content {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .book {
+    max-width: 480px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .text-content h1 {
+    font-size: 28px;
+  }
+
+  .btn {
+    font-size: 13px;
+    padding: 8px 16px;
+  }
+
+  .book {
+    max-width: 350px;
+  }
+
+  .logo {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  nav ul {
+    justify-content: center;
+  }
+}
