@@ -37,7 +37,12 @@ header {
     font-family: "Arvo", serif;
     font-weight: 400;
     font-style: normal;
+    color: yellowgreen;
   }
+  .logo:hover {
+    color: black;
+  }
+  
 
 
 nav ul {
@@ -90,13 +95,17 @@ nav a:hover {
 
 .btn {
   display: inline-block;
-  background-color: #d7b003;
+  background-color: #edc203;
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   border-radius: 25px;
   font-size: 14px;
   font-weight: bold;
+}
+.btn:hover {
+  color:#060404;
+  background-color: yellowgreen;
 }
 
 .image-wrapper {
