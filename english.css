@@ -33,6 +33,10 @@ html, body {
   font-size: 18px;
   margin-bottom: 10px;
 }
+button a{
+  text-decoration: none;
+  color: white;
+}
 
 .logo:hover {
   color: yellowgreen;
