@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+.hero {
+  min-height: 100vh;
+  background: linear-gradient(90deg, #75c2e3 0%, #93d3f5 25%, #c89fe7 50%, #cd7df2 75%, #727bf6 100%);
+        
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top-bar {
+  width: 100%;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  font-family: 'Arvo', serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.logo:hover {
+  color: yellowgreen;
+}
+
+.nav {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.nav a {
+  text-decoration: none;
+  margin: 0 20px;
+  font-size: 16px;
+  font-weight: 500;
+  color: black;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  text-decoration: underline;
+}
+
+.divider {
+  width: 90%;
+  border: none;
+  border-top: 2px solid black;
+  margin: 10px 0 30px 0;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.you h1 {
+  font-family: 'New Rocker', cursive;
+  font-size: 70px;
+}
+
+.buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
+  button {
+    padding: 12px 30px;
+    font-size: 1rem;
+    background: linear-gradient(to right, #0e053a, #360552);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s, background 0.3s;
+  }
+  
+  button a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  button:hover {
+    background: linear-gradient(to right, #4e51f7, #0b8ec6);
+    transform: scale(1.05);
+  }
+
+@media (max-width: 768px) {
+  .top-bar {
+    padding: 15px 20px;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  .nav a {
+    display: inline-block;
+    margin: 10px;
+    font-size: 14px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .divider {
+    width: 80%;
+  }
+}
